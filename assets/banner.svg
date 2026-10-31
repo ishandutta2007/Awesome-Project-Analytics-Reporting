@@ -1,0 +1,166 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 360" width="100%" height="360" style="background: linear-gradient(135deg, #0d1117 0%, #161b22 50%, #0b1329 100%); border-radius: 14px; overflow: hidden; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;">
+  <defs>
+    <!-- Gradients -->
+    <linearGradient id="primary-grad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#38bdf8" />
+      <stop offset="50%" stop-color="#818cf8" />
+      <stop offset="100%" stop-color="#c084fc" />
+    </linearGradient>
+    <linearGradient id="bar-grad-1" x1="0%" y1="100%" x2="0%" y2="0%">
+      <stop offset="0%" stop-color="#38bdf8" stop-opacity="0.2" />
+      <stop offset="100%" stop-color="#38bdf8" stop-opacity="0.85" />
+    </linearGradient>
+    <linearGradient id="bar-grad-2" x1="0%" y1="100%" x2="0%" y2="0%">
+      <stop offset="0%" stop-color="#818cf8" stop-opacity="0.2" />
+      <stop offset="100%" stop-color="#818cf8" stop-opacity="0.85" />
+    </linearGradient>
+    <linearGradient id="bar-grad-3" x1="0%" y1="100%" x2="0%" y2="0%">
+      <stop offset="0%" stop-color="#c084fc" stop-opacity="0.2" />
+      <stop offset="100%" stop-color="#c084fc" stop-opacity="0.85" />
+    </linearGradient>
+    <linearGradient id="line-area-grad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#38bdf8" stop-opacity="0.35" />
+      <stop offset="100%" stop-color="#38bdf8" stop-opacity="0.0" />
+    </linearGradient>
+
+    <!-- Filters for Glow -->
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="6" result="blur" />
+      <feMerge>
+        <feMergeNode in="blur" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+  </defs>
+
+  <style>
+    .bg-grid { stroke: rgba(255, 255, 255, 0.04); stroke-width: 1; }
+    .pulse-circle { animation: pulse 3s ease-in-out infinite alternate; }
+    .float-card { animation: floatAnim 6s ease-in-out infinite alternate; }
+    .wave-line { stroke-dasharray: 800; stroke-dashoffset: 800; animation: dash 4s cubic-bezier(0.4, 0, 0.2, 1) forwards; }
+    .shimmer-pill { animation: shimmer 4s infinite alternate ease-in-out; }
+    .bar-anim { transform-origin: bottom; animation: barGrow 2.5s ease-out forwards; }
+    
+    @keyframes dash {
+      to { stroke-dashoffset: 0; }
+    }
+    @keyframes floatAnim {
+      0% { transform: translateY(0px); }
+      100% { transform: translateY(-8px); }
+    }
+    @keyframes pulse {
+      0% { r: 4px; opacity: 0.6; }
+      100% { r: 8px; opacity: 1; }
+    }
+    @keyframes shimmer {
+      0% { opacity: 0.8; transform: scale(1); }
+      100% { opacity: 1; transform: scale(1.02); }
+    }
+  </style>
+
+  <!-- Background Technical Grid -->
+  <g class="bg-grid">
+    <line x1="0" y1="60" x2="1200" y2="60" />
+    <line x1="0" y1="120" x2="1200" y2="120" />
+    <line x1="0" y1="180" x2="1200" y2="180" />
+    <line x1="0" y1="240" x2="1200" y2="240" />
+    <line x1="0" y1="300" x2="1200" y2="300" />
+    <line x1="200" y1="0" x2="200" y2="360" />
+    <line x1="400" y1="0" x2="400" y2="360" />
+    <line x1="600" y1="0" x2="600" y2="360" />
+    <line x1="800" y1="0" x2="800" y2="360" />
+    <line x1="1000" y1="0" x2="1000" y2="360" />
+  </g>
+
+  <!-- Ambient Glow Blobs in Background -->
+  <circle cx="150" cy="80" r="140" fill="#38bdf8" opacity="0.08" filter="url(#glow)" />
+  <circle cx="1050" cy="260" r="160" fill="#818cf8" opacity="0.1" filter="url(#glow)" />
+
+  <!-- Background Decorative Dynamic Analytics Chart (Behind Right Side) -->
+  <g transform="translate(740, 75)" opacity="0.88" class="float-card">
+    <!-- Chart Container Card -->
+    <rect x="0" y="0" width="410" height="215" rx="12" fill="#1e2430" fill-opacity="0.75" stroke="#30363d" stroke-width="1.5" />
+    
+    <!-- Mini Card Header -->
+    <circle cx="20" cy="22" r="4" fill="#f43f5e" />
+    <circle cx="34" cy="22" r="4" fill="#eab308" />
+    <circle cx="48" cy="22" r="4" fill="#10b981" />
+    <text x="70" y="26" font-size="11" font-weight="600" fill="#8b949e" letter-spacing="0.5">SPRINT VELOCITY &amp; CYCLE TIME</text>
+    <rect x="315" y="14" width="75" height="18" rx="9" fill="#10b981" fill-opacity="0.15" stroke="#10b981" stroke-width="0.8" />
+    <text x="352" y="26" font-size="10" font-weight="700" fill="#34d399" text-anchor="middle">+28.4% YoY</text>
+
+    <!-- Bar Chart Elements -->
+    <rect x="30" y="115" width="22" height="65" rx="4" fill="url(#bar-grad-1)" />
+    <rect x="70" y="90" width="22" height="90" rx="4" fill="url(#bar-grad-1)" />
+    <rect x="110" y="75" width="22" height="105" rx="4" fill="url(#bar-grad-2)" />
+    <rect x="150" y="105" width="22" height="75" rx="4" fill="url(#bar-grad-2)" />
+    <rect x="190" y="60" width="22" height="120" rx="4" fill="url(#bar-grad-3)" />
+    <rect x="230" y="45" width="22" height="135" rx="4" fill="url(#bar-grad-3)" />
+    <rect x="270" y="68" width="22" height="112" rx="4" fill="url(#bar-grad-2)" />
+    <rect x="310" y="38" width="22" height="142" rx="4" fill="url(#primary-grad)" filter="url(#glow)" />
+    <rect x="350" y="55" width="22" height="125" rx="4" fill="url(#bar-grad-1)" />
+
+    <!-- Trend Line over chart -->
+    <path d="M 41 125 Q 120 70 201 62 T 321 42 T 361 58" fill="none" stroke="#38bdf8" stroke-width="3" filter="url(#glow)" class="wave-line" />
+    <!-- Dynamic Line Area Fill -->
+    <path d="M 41 125 Q 120 70 201 62 T 321 42 T 361 58 L 361 180 L 41 180 Z" fill="url(#line-area-grad)" opacity="0.5" />
+
+    <!-- Animated Data Points -->
+    <circle cx="201" cy="62" r="4.5" fill="#ffffff" stroke="#818cf8" stroke-width="2.5" class="pulse-circle" />
+    <circle cx="321" cy="42" r="5" fill="#ffffff" stroke="#38bdf8" stroke-width="2.5" class="pulse-circle" />
+
+    <!-- Bottom X-Axis labels -->
+    <text x="41" y="196" font-size="9" fill="#6e7681" text-anchor="middle">S-1</text>
+    <text x="121" y="196" font-size="9" fill="#6e7681" text-anchor="middle">S-3</text>
+    <text x="201" y="196" font-size="9" fill="#6e7681" text-anchor="middle">S-5</text>
+    <text x="281" y="196" font-size="9" fill="#6e7681" text-anchor="middle">S-7</text>
+    <text x="361" y="196" font-size="9" fill="#6e7681" text-anchor="middle">S-9</text>
+  </g>
+
+  <!-- FOREGROUND CONTENT: Header, Badges, Titles (Unobstructed & High Contrast) -->
+  <g transform="translate(65, 0)">
+    <!-- Top Pill Badge -->
+    <g transform="translate(0, 52)">
+      <rect x="0" y="0" width="290" height="28" rx="14" fill="#1f2937" stroke="#374151" stroke-width="1.2" class="shimmer-pill" />
+      <circle cx="14" cy="14" r="5" fill="#38bdf8" filter="url(#glow)" />
+      <text x="28" y="18" font-size="11" font-weight="700" fill="#93c5fd" letter-spacing="1">CURATED INTELLIGENCE PLATFORM</text>
+    </g>
+
+    <!-- Main Title -->
+    <text x="0" y="132" font-size="44" font-weight="800" fill="#ffffff" letter-spacing="-0.5">
+      Awesome Project Analytics
+    </text>
+    <text x="0" y="176" font-size="44" font-weight="800" fill="url(#primary-grad)" letter-spacing="-0.5">
+      &amp; Reporting
+    </text>
+
+    <!-- Subtitle / Tagline -->
+    <text x="0" y="222" font-size="16.5" font-weight="400" fill="#94a3b8" letter-spacing="0.2">
+      Production-Ready Sprint Metrics, Portfolio BI Dashboards &amp; Modern OSS Reporting
+    </text>
+
+    <!-- Interactive / Status Metadata Pills -->
+    <g transform="translate(0, 260)">
+      <!-- Pill 1: Agile Metrics -->
+      <g transform="translate(0, 0)">
+        <rect width="135" height="34" rx="8" fill="#1e293b" stroke="#334155" stroke-width="1.2" />
+        <text x="14" y="21" font-size="13" font-weight="600" fill="#e2e8f0">📊 Sprint Velocity</text>
+      </g>
+      <!-- Pill 2: Portfolio BI -->
+      <g transform="translate(147, 0)">
+        <rect width="142" height="34" rx="8" fill="#1e293b" stroke="#334155" stroke-width="1.2" />
+        <text x="14" y="21" font-size="13" font-weight="600" fill="#e2e8f0">📈 BI Dashboards</text>
+      </g>
+      <!-- Pill 3: Self-Hosted -->
+      <g transform="translate(301, 0)">
+        <rect width="145" height="34" rx="8" fill="#1e293b" stroke="#334155" stroke-width="1.2" />
+        <text x="14" y="21" font-size="13" font-weight="600" fill="#e2e8f0">⚡ Self-Hosted OSS</text>
+      </g>
+      <!-- Pill 4: Updated Badge -->
+      <g transform="translate(458, 0)">
+        <rect width="130" height="34" rx="8" fill="#1e293b" stroke="#334155" stroke-width="1.2" />
+        <text x="14" y="21" font-size="13" font-weight="600" fill="#38bdf8">✨ 2026 Edition</text>
+      </g>
+    </g>
+  </g>
+</svg>

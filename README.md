@@ -1,195 +1,118 @@
-# Awesome-Project-Analytics-Reporting
+<div align="center">
 
-## Top Project Analytics & Reporting Ecosystem
+![Awesome Project Analytics & Reporting Banner](assets/banner.svg)
 
+# 📊 Awesome Project Analytics & Reporting 📈
 
+[![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
+[![Tracked Category](https://img.shields.io/badge/Category-Project%20Analytics%20%26%20Reporting-blue.svg)](https://github.com/ishandutta2007/Awesome-Project-Analytics-Reporting)
+[![License: CC0-1.0](https://img.shields.io/badge/License-CC0_1.0-lightgrey.svg)](LICENSE)
+[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](CONTRIBUTING.md)
+[![Last Updated](https://img.shields.io/badge/Updated-November%202026-teal.svg)](https://github.com/ishandutta2007/Awesome-Project-Analytics-Reporting)
 
-**Curated List of SaaS Products & Open-Source GitHub Projects**  
+<p align="center">
+  <b>A production-grade, curated collection of top SaaS products, enterprise BI engines, and open-source project analytics tools.</b><br/>
+  <i>Track sprint metrics, velocity, cycle time, burndown trends, portfolio health, and automated PMO dashboards.</i>
+</p>
 
-*Focused on Sprint Metrics, Portfolio Dashboards & Self-Hosted Reporting Engines*  
+[Explore SaaS](#-saas-hosted-platforms) • [Open-Source Solutions](#-open-source-github-projects) • [Sector Dynamics](#-sector-overview--market-dynamics) • [Contribution Guide](#-how-to-contribute)
 
-**Last updated: November 2026**
-
-
-
-This repository tracks notable **SaaS platforms** and **open-source projects** for **Project Analytics & Reporting**. These tools enable teams and PMOs to turn raw project data—issues, sprints, time logs, and budgets—into actionable insights, tracking velocity, spotting bottlenecks, and reporting progress to stakeholders without manual spreadsheet exports.
-
-
-
-**Examples** include Jira Reporting, Screenful, Tableau, Power BI, Looker, eazyBI, Zoho Analytics, Domo, Datadog Project Analytics, and GoodData (the category leaders).
-
-
-
-**Open-source emphasis**: Project Analytics & Reporting is a domain where open-source tooling is **surprisingly capable at the data layer but requires assembly for turnkey reporting**. **Apache Superset** and **Metabase** provide mature, self-hosted BI platforms that can connect to project databases (Redmine, OpenProject, Jira exports) for custom dashboards. For project-specific analytics, **OpenProject** is actively building native reporting—its roadmap includes sprint reports, burndown/burnup charts, velocity charts, cumulative flow diagrams, and epic progress views, addressing gaps teams migrating from Jira's plugin ecosystem have complained about . **Redmine Reporting** (likehopper) adds interactive dashboards with issue flow, time consumption, backlog tracking, and Chart.js visualizations directly within Redmine . The critical caveat: **commercial tools like Screenful and eazyBI are purpose-built for project data**—Screenful's Analytics 2 engine handles advanced metrics and AI-assisted chart creation , and eazyBI provides MDX-based OLAP analysis for Jira with 2026 additions like AI agent summaries and terminal-based CLI management . Open-source BI requires you to build the project-specific metrics yourself.
-
-
-
-Contributions welcome! Open a PR to add/update entries. Keep descriptions factual and link to official sites.
-
-
-
-## Table of Contents
-
-- [SaaS/Hosted Platforms](#saas-products)
-
-- [Open-Source GitHub Projects](#open-source-github-projects)
-
-- [How to Contribute](#how-to-contribute)
-
-- [Disclaimer](#disclaimer)
-
-
-
-## SaaS/Hosted Platforms
-
-
-
-- **[Jira Reporting](https://www.atlassian.com/software/jira/guides/reports-dashboards/overview)**  
-
-  Native reporting and dashboards within Jira; built-in reports cover agile metrics (burndown, velocity, sprint), DevOps (deployment frequency), issue analysis, and forecasting . Dashboards aggregate gadgets across projects for real-time tracking. **Limitation**: advanced analytics and AI-powered space insights may require Premium or Enterprise tiers .
-
-
-
-- **[Screenful](https://screenful.com/)**  
-
-  Project analytics platform for Jira, Trello, ClickUp, and other task management tools. **Analytics 2 engine** (fully deployed Q1 2025) delivers faster chart loading and advanced analytics cases . Features: **15 chart types**, 100+ templates, **AI assistant** for natural-language chart creation ("Show me tasks completed this month grouped by label"), daily grouping, click-through drill-downs, and scheduled reports via email/Slack/PDF . **Note**: Dashboards product was sunset January 1, 2025 in favor of the new analytics engine .
-
-
-
-- **[eazyBI](https://docs.eazybi.com/)**  
-
-  OLAP-based reporting for Jira and Confluence with **MDX** for complex calculated measures. 2026 additions: **Rovo AI agent integration** for report summaries and insights, **eazyBI CLI** for terminal-based account/report management, AI agent skill for programmatic access, and refreshed dashboard design . **Best for teams wanting deep, multi-dimensional analysis** of Jira data—but it is a specialized add-on, not a standalone BI platform.
-
-
-
-- **[Tableau](https://www.tableau.com/)**  
-
-  Enterprise visual analytics; widely used for project and portfolio dashboards when connected to a data warehouse or Jira exports. Requires analyst resources for custom project metrics.
-
-
-
-- **[Power BI](https://powerbi.microsoft.com/)**  
-
-  Microsoft's BI platform; common for project reporting in Microsoft-centric organizations, with DAX for custom metrics and Power Query for data transformation.
-
-
-
-- **[Looker](https://looker.com/)**  
-
-  Google Cloud BI platform built on LookML for governed metric definitions; strongest when standardized on BigQuery for unified project and financial data.
-
-
-
-- **[Zoho Analytics](https://www.zoho.com/analytics/)**  
-
-  BI and analytics platform within the Zoho ecosystem; can connect to Zoho Projects and other Zoho apps for project reporting.
-
-
-
-- **[Domo](https://www.domo.com/)**  
-
-  Cloud BI platform with a broad connector library; positioned for operational and executive reporting across project and business data.
-
-
-
-- **[Datadog Project Analytics](https://docs.datadoghq.com/)**  
-
-  Analytics within Datadog for product and engineering data; while not a dedicated project management reporting tool, it can track custom events and metrics relevant to project health . **Best for engineering teams** already using Datadog for observability who want project metrics alongside infrastructure data.
-
-
-
-- **[GoodData](https://www.gooddata.com/)**  
-
-  Embedded analytics and BI platform; can be used to embed project dashboards into internal tools and customer-facing applications.
-
-
-
-## Open-Source GitHub Projects
-
-
-
-### Project Management Platforms with Native Reporting
-
-
-
-- **[OpenProject](https://github.com/opf/openproject)**  
-
-  Open-source project management (GPLv3 Community Edition) with **native reporting actively under development**. The roadmap (shared for community feedback) includes **sprint reports** (planned vs. completed vs. added mid-sprint), **burndown/burnup charts** with scope change visibility, **velocity charts**, **epic progress views**, **created vs. resolved charts** for backlog health, and **cumulative flow diagrams** for Kanban teams . **Current state**: concepts and early prototypes as of August 2026—not yet finished features . **Best for teams already on OpenProject** wanting integrated reporting—but expect to supplement with external BI until native reporting matures.
-
-
-
-- **[Redmine Reporting (likehopper)](https://www.redmine.org/plugins/redmine_reporting)**  
-
-  Open-source Redmine plugin (v1.2.1, compatible with Redmine 5.0–7.0) adding **interactive project dashboards** with Chart.js . Features: **issue flow tracking**, activity monitoring, **time consumption and backlog** charts, workload/team reporting (open issues and remaining effort by assignee), burnup charts with version changes and reopened issues, and **configurable annual time credits** . Charts link directly to Redmine's native issue/time-entry lists while respecting project permissions. **Best for Redmine users** wanting embedded dashboards without a separate BI tool—but it is plugin-specific and requires Redmine 5.0+.
-
-
-
-### General-Purpose BI Platforms (Build Your Own Project Dashboards)
-
-
-
-- **[Apache Superset](https://github.com/apache/superset)**  
-
-  Leading open-source BI platform (Apache 2.0) with 40+ chart types, SQL Lab, RBAC, and row-level security. **Can connect to project databases** (Redmine's MySQL/PostgreSQL, OpenProject's PostgreSQL, Jira exports) for custom project dashboards. **Best for teams with SQL skills** wanting full control over metrics and visualization—but requires data modeling and dashboard building from scratch.
-
-
-
-- **[Metabase](https://github.com/metabase/metabase)**  
-
-  Open-source BI tool (AGPL) designed for non-technical users with a visual query builder; lighter than Superset and easier to deploy. **Can be connected to project databases** for self-service reporting. **Best for mixed teams** where project managers need to build their own reports—but project-specific metrics (sprint velocity, burndown) must be defined manually.
-
-
-
-### Additional Strong Open-Source Options
-
-
-
-- **RedmineUP Agile** — Commercial plugin (paid) for Redmine with agile charts and reporting; **not free** but often recommended for Redmine users wanting Jira-like agile reporting . **Verify licensing** before adoption.
-
-- **oss-stats** — Open-source tool for tracking **open-source community health metrics** (PR response time, CI health, pipeline visibility) . **Niche**—for OSS maintainers rather than general project analytics, but demonstrates the pattern for automated project health reporting.
-
-
-
-**Frameworks for building custom systems**: For **Redmine users**, Redmine Reporting provides embedded dashboards with issue flow and time tracking . For **OpenProject users**, native reporting is in active development—expect to use Superset/Metabase in the interim . For **general project data**, Superset or Metabase can be connected to project databases for custom dashboards. **No open-source project matches Screenful's AI-assisted chart creation or eazyBI's MDX-based OLAP depth** —those are commercial advantages for project-specific analytics.
-
-
-
-## How to Contribute
-
-
-
-1. Fork the repo.
-
-2. Add/edit entries in `README.md` (follow existing format).
-
-3. Include: name, link, 1–2 sentence description, and whether it's SaaS or open-source.
-
-4. Submit PR with a short explanation.
-
-
-
-Star the repo if you find it useful!
-
-
-
-## Disclaimer
-
-
-
-- This is a **community-curated** list — not exhaustive and not an endorsement.
-
-- Project analytics platforms handling project and performance data must comply with organizational governance policies; **self-hosted solutions place full responsibility for data pipeline reliability, metric accuracy, and access controls on the operator**.
-
-- **Open-source project analytics is strongest at the BI layer but requires assembly for project-specific reporting**—Superset and Metabase provide mature visualization, and Redmine Reporting provides embedded dashboards . However, **no open-source project matches Screenful's AI-assisted chart creation or eazyBI's OLAP depth for Jira** . OpenProject's native reporting is in active development but not yet complete . Choose based on whether you need a general BI platform (Superset, Metabase) or project-embedded dashboards (Redmine Reporting, OpenProject's roadmap).
-
-- Verify license terms for commercial use; Superset uses Apache 2.0, Metabase uses AGPL, and Redmine Reporting is a Redmine plugin (check repository for license).
-
-
+</div>
 
 ---
 
+## 📑 Table of Contents
 
+- [🌐 Sector Overview & Market Dynamics](#-sector-overview--market-dynamics)
+- [☁️ SaaS / Hosted Platforms](#-saas-hosted-platforms)
+- [💻 Open-Source GitHub Projects](#-open-source-github-projects)
+- [💡 Architectural Evaluation & Frameworks](#-architectural-evaluation--frameworks)
+- [🤝 How to Contribute](#-how-to-contribute)
+- [⚖️ Disclaimer & Governance](#-disclaimer--governance)
 
-**Made for project managers, PMO analysts, and teams building project reporting infrastructure.**  
+---
 
-Let's make project analytics more open, but with clear eyes about the project-specific metric engineering that commercial tools still handle out of the box.
+## 🌐 Sector Overview & Market Dynamics
+
+The global project portfolio management and project analytics software market is estimated at **$6.2 Billion in 2026** (expanding at an ~11.8% CAGR toward $10.5B by 2030), driven by the rapid transition to automated developer analytics, AI-assisted sprint forecasting, and executive PMO visibility.
+
+The sector is **moderately fragmented**: mega-cap hyper-scalers (Microsoft Power BI, Google Cloud Looker, Salesforce Tableau) anchor high-end enterprise data lakes, while agile specialist platforms (Atlassian Jira, Screenful, eazyBI) capture domain-specific daily agile telemetry. High switching costs in team issue tracking prevent a winner-take-all monopoly, sustaining rich ecosystems across both dedicated agile metric providers and open-source self-hosted analytics engines.
+
+---
+
+## ☁️ SaaS / Hosted Platforms
+
+Below is the comparative breakdown of leading Project Analytics & Reporting SaaS platforms, sorted by **Company Size / Valuation / Annual Revenue (Descending)**.
+
+| Platform / Vendor 🏢 | Company Size / Revenue / Valuation 💰 | Starting Tier Pricing 💵 | Free Tier / Trial Limits ⏱️ | Core Analytics Focus & Capabilities 🎯 |
+| :--- | :--- | :--- | :--- | :--- |
+| **[Power BI](https://powerbi.microsoft.com/)** (Microsoft) | **~$3.1 Trillion** market cap / $245B+ ARR | **$10.00 / user / month** (Power BI Pro) | **Free forever plan** (Power BI Desktop; single-user report authoring, no cloud publishing/sharing). Also 60-day cloud trial. | Enterprise BI, DAX measures, automated Power Query transformation, native Azure DevOps / Jira connectors, and executive portfolio dashboards. |
+| **[Looker](https://looker.com/)** (Google Cloud) | **~$2.1 Trillion** market cap (Alphabet) / $40B+ Google Cloud ARR | **$5,000 / month** (Looker Standard Platform base) + user licenses | **30-day guided enterprise trial** with cloud sandbox access and sample database modeling; no permanent free tier. | Governed semantic modeling with LookML, in-database BigQuery computation, git-versioned metric definitions, and embedded enterprise project KPI reporting. |
+| **[Tableau](https://www.tableau.com/)** (Salesforce) | **~$300 Billion** market cap (Salesforce) / $38B ARR | **$15.00 / user / month** (Tableau Viewer; Creator tier $75/mo) | **Tableau Public** (100% free, limited strictly to publicly accessible data published online). Also 14-day fully featured free trial. | Gold-standard exploratory visual data analytics, rich drag-and-drop dashboarding, multi-source blending across Jira, ServiceNow, and enterprise SQL databases. |
+| **[Datadog Project Analytics](https://docs.datadoghq.com/)** | **~$42 Billion** market cap / $2.6B+ ARR | **$15.00 / host / month** (Pro Infrastructure tier) | **14-day full-access free trial** with full data ingest and pipeline monitoring; no credit card required. | Engineering cycle time, deployment frequency, CI/CD telemetry, and tracking DORA delivery metrics directly alongside production infrastructure observability. |
+| **[Jira Reporting](https://www.atlassian.com/software/jira/guides/reports-dashboards/overview)** (Atlassian) | **~$45 Billion** market cap / $4.4B+ ARR | **$7.75 / user / month** (Standard tier) | **Free forever plan** for up to **10 users** (2 GB file storage, unlimited sprint boards, basic burndown & velocity reports). | Native Agile Scrum & Kanban telemetry, release burnup, cumulative flow diagrams, sprint health, and cross-project dashboard gadget aggregation. |
+| **[Zoho Analytics](https://www.zoho.com/analytics/)** (Zoho Corp) | **$1 Billion+** annual ARR (Bootstrapped / Private) | **$24.00 / month** (Basic plan, 2 users & 0.5M rows) | **Free forever plan** limited to **2 users, 5 workspaces, and 10,000 rows** of data. Also 15-day free trial on premium tiers. | Deep integration with Zoho Projects and Zoho Sprints, auto-blended project financial reporting, AI conversational query engine (Zia), and 40+ project KPI templates. |
+| **[Domo](https://www.domo.com/)** | **~$350 Million** market cap / $320M ARR | **$300.00 / month** (Standard consumption package) | **30-day free trial** with full platform access, 1,000+ connectors, and sample business datasets. | Real-time cloud executive dashboards, pre-built cross-functional connector libraries, mobile-first project alerts, and automated ETL pipelines. |
+| **[GoodData](https://www.gooddata.com/)** | **~$150 Million** estimated valuation (Growth Stage) | **$30.00 / workspace / month** (Professional edition) | **30-day fully functional free trial** supporting custom data pipelines and embedded analytics playgrounds. | Headless BI engine, metrics-as-code architecture, embedded project dashboards, multi-tenant workspace analytics, and interactive analytics APIs. |
+| **[eazyBI](https://docs.eazybi.com/)** | **~$15 Million** estimated ARR (Independent Bootstrapped) | **$10.00 / month** (Cloud starter tier for up to 10 Jira users) | **30-day unrestricted free trial** on Atlassian Marketplace with full MDX OLAP engine and reporting features. | Multi-dimensional OLAP analysis for Jira & Confluence, custom MDX calculations, Rovo AI project summaries, and automated CLI dashboard management. |
+| **[Screenful](https://screenful.com/)** | **~$5 Million** estimated ARR (Independent Venture) | **$39.00 / month** (Starter plan covering up to 10 active users) | **14-day fully featured free trial** with unlimited data sources, custom charts, and automated report scheduling. | Turnkey Agile analytics engine for Jira, Trello, ClickUp, and GitHub; AI natural-language chart creator, sprint velocity, cycle time histograms, and forecast models. |
+
+---
+
+## 💻 Open-Source GitHub Projects
+
+Explore the top self-hosted and community-driven project analytics, business intelligence, and engineering metrics platforms, sorted by **GitHub Stars (Descending)**.
+
+| Project & Repository 📦 | GitHub Stars ⭐ | License 📜 | Architecture & Capabilities 🛠️ |
+| :--- | :--- | :--- | :--- |
+| **[Grafana](https://github.com/grafana/grafana)** | [![GitHub stars](https://img.shields.io/github/stars/grafana/grafana?style=social&color=white)](https://github.com/grafana/grafana/stargazers) | AGPL-3.0 | Modern real-time operational dashboarding and visualization platform. Connects to PostgreSQL, MySQL, ClickHouse, and Prometheus to monitor sprint velocity, issue resolution rates, and CI/CD pipelines. |
+| **[Apache Superset](https://github.com/apache/superset)** | [![GitHub stars](https://img.shields.io/github/stars/apache/superset?style=social&color=white)](https://github.com/apache/superset/stargazers) | Apache-2.0 | Enterprise-grade cloud-native BI web application with 40+ visualization plugins, robust SQL Lab, granular RBAC, and seamless database connectivity to Jira SQL exports, Redmine, and PostgreSQL. |
+| **[Plane](https://github.com/makeplane/plane)** | [![GitHub stars](https://img.shields.io/github/stars/makeplane/plane?style=social&color=white)](https://github.com/makeplane/plane/stargazers) | AGPL-3.0 | Next-generation open-source software development tracker featuring native cycle analytics, burnup/burndown trends, project workload distribution, and lead time metrics. |
+| **[Metabase](https://github.com/metabase/metabase)** | [![GitHub stars](https://img.shields.io/github/stars/metabase/metabase?style=social&color=white)](https://github.com/metabase/metabase/stargazers) | AGPL-3.0 | User-friendly self-service BI platform with visual query builder, automated drill-downs, and email/Slack alerting. Ideal for non-technical PMs querying project tracking databases without SQL. |
+| **[Cube](https://github.com/cube-js/cube)** | [![GitHub stars](https://img.shields.io/github/stars/cube-js/cube?style=social&color=white)](https://github.com/cube-js/cube/stargazers) | Apache-2.0 | Universal semantic layer and headless analytics engine. Models project metrics (cycle times, throughput, budget utilization) centrally and feeds consistent numbers to custom internal portals. |
+| **[OpenProject](https://github.com/opf/openproject)** | [![GitHub stars](https://img.shields.io/github/stars/opf/openproject?style=social&color=white)](https://github.com/opf/openproject/stargazers) | GPL-3.0 | Complete self-hosted project management platform. Features native project cost reporting, time tracking, budget reports, and upcoming native Agile sprint velocity and cumulative flow diagrams. |
+| **[Planka](https://github.com/plankanban/planka)** | [![GitHub stars](https://img.shields.io/github/stars/plankanban/planka?style=social&color=white)](https://github.com/plankanban/planka/stargazers) | AGPL-3.0 | Elegant open-source Kanban board platform with built-in time tracking, task completion trends, and project activity audit logs for agile delivery teams. |
+| **[Leantime](https://github.com/leantime/leantime)** | [![GitHub stars](https://img.shields.io/github/stars/leantime/leantime?style=social&color=white)](https://github.com/leantime/leantime/stargazers) | AGPL-3.0 | Strategic project management platform for non-project managers. Combines OKR tracking, milestone progress, sprint burndown, and AI-assisted task health assessments. |
+| **[Evidence](https://github.com/evidence-dev/evidence)** | [![GitHub stars](https://img.shields.io/github/stars/evidence-dev/evidence?style=social&color=white)](https://github.com/evidence-dev/evidence/stargazers) | MIT | Code-based business intelligence framework (Markdown + SQL). Build fast, version-controlled project status reports, sprint summaries, and PMO decks rendered as static web apps. |
+| **[Lightdash](https://github.com/lightdash/lightdash)** | [![GitHub stars](https://img.shields.io/github/stars/lightdash/lightdash?style=social&color=white)](https://github.com/lightdash/lightdash/stargazers) | MIT | Open-source Looker alternative built natively on dbt. Enables engineering teams to define project data metrics in dbt models and share self-serve dashboards across departments. |
+| **[Apache DevLake](https://github.com/apache/incubator-devlake)** | [![GitHub stars](https://img.shields.io/github/stars/apache/incubator-devlake?style=social&color=white)](https://github.com/apache/incubator-devlake/stargazers) | Apache-2.0 | Purpose-built open-source dev data platform. Ingests data from Jira, GitHub, GitLab, and SonarQube to calculate engineering throughput, DORA metrics, and sprint cycle efficiency out-of-the-box. |
+| **[Redmine Reporting](https://github.com/likehopper/redmine_reporting)** | [![GitHub stars](https://img.shields.io/github/stars/likehopper/redmine_reporting?style=social&color=white)](https://github.com/likehopper/redmine_reporting/stargazers) | GPL-2.0 | Native Redmine dashboard plugin providing real-time issue flow monitoring, time budget consumption charts, workload distributions, and Chart.js graphical visualizations. |
+
+---
+
+## 💡 Architectural Evaluation & Frameworks
+
+When choosing between SaaS platforms and open-source analytics infrastructure:
+
+- **Turnkey Agile Metrics**: Commercial tools like **Screenful** and **eazyBI** feature out-of-the-box support for Agile formulas (lead time distributions, Monte Carlo forecast simulations, and multi-dimensional Jira MDX queries) without ongoing data pipeline maintenance.
+- **Engineering & DORA Metrics**: For automated engineering lifecycle telemetry, **Apache DevLake** provides dedicated connectors for GitHub/GitLab/Jira, standardizing delivery KPIs with zero custom ETL scripting.
+- **Enterprise PMO Data Lakes**: Platforms like **Microsoft Power BI**, **Tableau**, and **Apache Superset** excel when project metadata must be cross-analyzed with corporate ERP, Salesforce CRM, or general financial ledger accounts.
+- **Semantic Layer Governance**: Deploying **Cube** or **Lightdash** ensures that metrics such as "Story Point Velocity" or "Billable Utilization" remain universally defined across all internal dashboards and reports.
+
+---
+
+## 🤝 How to Contribute
+
+Contributions are warmly encouraged! Help keep this directory comprehensive and up to date:
+
+1. 🍴 **Fork** this repository.
+2. 🌿 Create a descriptive feature branch (`git checkout -b feature/add-new-project-tool`).
+3. 📝 Update `README.md` maintaining table formatting, verified starting prices, exact free tier limits, and accurate repository star links.
+4. 🚀 Commit your updates with clear messages (`git commit -m "feat: add NewTool to OSS table"`).
+5. 📤 Push your branch and submit a **Pull Request**.
+
+---
+
+## ⚖️ Disclaimer & Governance
+
+- This list is independently curated by the open-source community for informational and evaluation purposes.
+- Platform trademarks, brand logos, and service names belong to their respective owners.
+- Self-hosted open-source deployments require operators to manage their own data pipeline reliability, access controls, GDPR compliance, and backup strategies.
+- Please verify licensing terms before production deployment: Apache 2.0 and MIT permit enterprise adoption, while AGPL-3.0 and GPL-3.0 impose copyleft obligations on server-side distribution and modifications.
+
+---
+
+<div align="center">
+  <sub>Built with ❤️ for Project Managers, Scrum Masters, PMO Leaders, and Data Engineers worldwide.</sub><br/>
+  ⭐ <b>Star this repo if it helps your team make data-driven project decisions!</b> ⭐
+</div>
