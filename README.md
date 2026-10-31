@@ -4,11 +4,12 @@
 
 # 📊 Awesome Project Analytics & Reporting 📈
 
-[![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
+<a href="https://github.com/ishandutta2007/Awesome-Awesome-Awesome"><img src="https://img.shields.io/badge/Awesome-%E2%9C%94-blueviolet?style=flat-square&logo=github" alt="Awesome"/></a><a href="https://discord.gg/jc4xtF58Ve"><img src="https://img.shields.io/badge/Discord-5865F2?style=for-the-badge&logo=discord&logoCooor=white" alt="Discord" /></a>
 [![Tracked Category](https://img.shields.io/badge/Category-Project%20Analytics%20%26%20Reporting-blue.svg)](https://github.com/ishandutta2007/Awesome-Project-Analytics-Reporting)
 [![License: CC0-1.0](https://img.shields.io/badge/License-CC0_1.0-lightgrey.svg)](LICENSE)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](CONTRIBUTING.md)
 [![Last Updated](https://img.shields.io/badge/Updated-November%202026-teal.svg)](https://github.com/ishandutta2007/Awesome-Project-Analytics-Reporting)
+<a href="https://github.com/ishandutta2007"><img alt="GitHub followers" src="https://img.shields.io/github/followers/ishandutta2007?label=Follow" /></a>
 
 <p align="center">
   <b>A production-grade, curated collection of top SaaS products, enterprise BI engines, and open-source project analytics tools.</b><br/>
@@ -28,6 +29,8 @@
 - [💻 Open-Source GitHub Projects](#-open-source-github-projects)
 - [💡 Architectural Evaluation & Frameworks](#-architectural-evaluation--frameworks)
 - [🤝 How to Contribute](#-how-to-contribute)
+- [💖 Support & Sponsorship](#-support--sponsorship)
+- [⭐ Star History](#-star-history)
 - [⚖️ Disclaimer & Governance](#-disclaimer--governance)
 
 ---
@@ -100,6 +103,23 @@ Contributions are warmly encouraged! Help keep this directory comprehensive and 
 3. 📝 Update `README.md` maintaining table formatting, verified starting prices, exact free tier limits, and accurate repository star links.
 4. 🚀 Commit your updates with clear messages (`git commit -m "feat: add NewTool to OSS table"`).
 5. 📤 Push your branch and submit a **Pull Request**.
+
+---
+
+## 💖 Support & Sponsorship
+
+Thank you so much for using and supporting this curated resource! If you find this directory valuable for your engineering team, project management office (PMO), or business intelligence workflows:
+
+- ⭐ **Star** this repository to help other developers and managers discover it.
+- 🍴 **Fork** and contribute new tools, updates, or benchmark corrections.
+- 📢 **Share** it with your colleagues and across developer communities on LinkedIn, X/Twitter, or Reddit.
+- ☕ **Buy me a coffee**: If you'd like to support ongoing maintenance and new curated additions, consider sponsoring via the [Sponsor Dashboard](https://github.com/sponsors/ishandutta2007).
+
+---
+
+## ⭐ Star History
+
+[![Star History Chart](https://star-history.dera.page/svg?repos=ishandutta2007/Awesome-Project-Analytics-Reporting&type=date&legend=top-left)](https://star-history.dera.page/#ishandutta2007/Awesome-Project-Analytics-Reporting&type=date&legend=top-left)
 
 ---
 
